@@ -21,6 +21,7 @@ let reset = () => {
     btnEl.forEach((btn) =>{
         btn.innerText = "";
         btn.disabled = false;
+        turnEl.innerHTML = `Player <span class="x">${player}</span>  Turn`;
     });
 };
 
