@@ -38,6 +38,8 @@ body{
 .game{
     height: 25rem;
     width: 25rem;
+    /* background-color: white; */
+    backdrop-filter: blur(10px);
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -47,10 +49,15 @@ body{
 .btn{
     height: 8rem;
     width: 8rem;
-    background: transparent;
+       background: rgba(255,255,255,0.6);
+    border:1px solid rgba(255,255,255,0.3);
+    box-shadow: 0 0 10px rgba(0, 0, 0, );
+    border-style: none;
     border-radius: 1rem;
     font-size: 6rem;
     font-weight: 600;
+    position: relative;
+    z-index: 1000;
 }
 
 .btn,#rst:hover{
@@ -69,6 +76,7 @@ body{
     margin-top: 2rem;
     
     background-color: red;
+    
     color: white;
     font-size: 1.4rem;
     border-style: none;
